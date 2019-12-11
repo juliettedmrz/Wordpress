@@ -1,0 +1,232 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+        
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.header nav {
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.header {
+    background-color: #0d7619;
+    padding-top: 
+}
+
+.section1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.section1 #banner_title_brown {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.section1 #banner_title_green {
+    color: #9acf64;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.section1 #banner_register_link {
+    background-color: #0d7619;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.section2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: dimgrey;
+    text-align: center;
+}
+
+.section2 #conference {
+        text-transform: uppercase;
+} 
+
+.section3 {
+    background-image: url(../img/bandeau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+.section4 {
+    background-color: beige;
+    color: dimgrey;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.section4 #titre {
+    text-transform: uppercase;
+    color: #9acf64;
+    font-weight: bold;
+}
+.section4 #colonnes {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.section4 #vegetaux {
+    width: 50%;
+}
+
+.section4 #activites {
+    width: 50%;
+}
+
+
+.section4 a {
+    text-transform: uppercase;
+    color: white;
+    background-color: #0d7619;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px; 
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.section5 {
+    text-align: center;
+}
+
+.section5 #titre {
+    text-align: center;
+    text-transform: uppercase;
+    color: dimgrey;
+}
+
+.section5 #description {
+    color: dimgey;
+    text-align: center;
+    
+}
+
+.section5 img {
+    border-radius:60px;
+    width: 110px;
+}
+
+.section5 a {
+    background-color: #9acf64;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.section5 #orateurs {
+    display: flex;
+    justify-content: center;
+}
+
+.section5 div {
+    margin-right: 100px;
+}
+
+.section5 .nom {
+    font-weight: bold;
+}
+
+.section6 #background_image {
+    background-image: url(../img/lieu.png);
+    padding: 250px;
+}
+
+.section6{
+    text-align: center;
+    color: dimgrey;
+}
+
+.section7 #titre{
+    text-align: center;    
+    color: dimgrey;
+}
+
+.section8 {
+    text-align: center;
+    color: dimgrey;
+    background-color: beige;
+}
+
+.section8 #articles {
+    display: flex;
+}
+
+.section8 div {
+    justify-content: center;
+        margin-right: 20px;
+}
+
+.section8 a {
+    color: lightslategrey;
+    border-radius: 1px solid grey;
+    
+}
+
+.section8 #article1 {
+    background-image: url(../img/programme.png);
+    padding: 40px;
+}
+
+.section8 #article2 {
+    background-image: url(../img/programme.png);
+    padding: 40px;
+}
+
+.section8 #article3 {
+    background-image: url(../img/programme.png);
+    padding: 40px;
+}
+
+.section8 #article4 {
+    background-image: url(../img/programme.png);
+    padding: 40px;
+}
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    font-weight: 400;
+}
+
+.section9 #tel1 {
+    background-image: url(../img/logo.png);
+}
+
+.section7 img {
+    width: 40%;
+
+}
+.section7 #grandesvideos {
+    display: flex;
+}
