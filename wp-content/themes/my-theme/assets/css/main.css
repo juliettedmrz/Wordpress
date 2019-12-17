@@ -13,6 +13,13 @@ a {
     text-decoration: none;
     color: white;
 }
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    font-weight: 400;
+}
+
 .header nav {
     float: right;
 }
@@ -84,6 +91,10 @@ ul{
     padding-top: 20px;
 }
 
+.section4 #heure {
+    font-weight: bold;
+}
+
 .section4 #titre {
     text-transform: uppercase;
     color: #9acf64;
@@ -144,17 +155,28 @@ ul{
     font-weight: bold;
 }
 
-.section5 #orateurs {
-    display: flex;
+.section5 div {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
     justify-content: center;
 }
-
-.section5 div {
-    margin-right: 100px;
+.section5 #orateurs1 {
+    display: flex;
 }
+
+.section5 #orateurs2 {
+    display: flex;
+}
+
 
 .section5 .nom {
     font-weight: bold;
+}
+
+.section5 .description {
+    color: lightgray;
 }
 
 .section6 #background_image {
@@ -167,9 +189,57 @@ ul{
     color: dimgrey;
 }
 
+.section7 a {
+    text-align: center;
+}
 .section7 #titre{
     text-align: center;    
     color: dimgrey;
+}
+
+.section7 img {
+    width: 90%;
+}
+
+.section7 .titre {
+    font-weight: bold;
+    display: flex;
+    color: dimgray;
+}
+
+.section7 .description {
+    color: dimgray;
+    display: flex;
+}
+
+.section7 #grandes_videos {
+    display: flex;
+}
+
+.section7 #petites_videos1 {
+    display: flex;
+    margin: 10px;
+}
+
+.section7 #petites_videos2 {
+    display: flex;
+    margin: 10px;
+}
+
+.section7 #v1 {
+    display: flex;
+}
+
+.section7 #v2 {
+    display: flex;
+}
+
+.section7 #v3 {
+    display: flex;
+}
+
+.section7 #v4 {
+    display: flex;
 }
 
 .section8 {
@@ -184,13 +254,17 @@ ul{
 
 .section8 div {
     justify-content: center;
-        margin-right: 20px;
+}
+
+.section8 #articles div {
+    background-color: white;
+    margin-right: 20px;
 }
 
 .section8 a {
     color: lightslategrey;
-    border-radius: 1px solid grey;
-    
+    text-transform: uppercase;
+    padding: 5px;
 }
 
 .section8 #article1 {
@@ -213,20 +287,11 @@ ul{
     padding: 40px;
 }
 
-footer {
-    background-color: darkslategrey;
-    color: white;
-    font-weight: 400;
+.trait {
+    background-color: grey;
+    height: 1pt;
+    width: 10%;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.section9 #tel1 {
-    background-image: url(../img/logo.png);
-}
-
-.section7 img {
-    width: 40%;
-
-}
-.section7 #grandesvideos {
-    display: flex;
-}

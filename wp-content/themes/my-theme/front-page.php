@@ -36,6 +36,7 @@ if ( have_posts() ) {
 
 <section class="section2">
     <h1 id="conference"><?php the_field('section2_title'); ?></h1>
+    <div class="trait"></div>
     <p id="chp_txt"><?php the_field('section2_txt'); ?></p>
 </section>
 
@@ -45,6 +46,7 @@ if ( have_posts() ) {
 
 <section class="section4">
     <h1 id="programme">Au programme</h1>
+    <div class="trait"></div>
     <div id="colonnes">
         
     <div id="vegetaux"><h1 id="titre"><?php the_field('title1_program'); ?></h1>
@@ -72,32 +74,53 @@ if ( have_posts() ) {
 
 <section class="section5">
     <h1 id="titre"><?php the_field('section5_titre'); ?></h1>
+    <div class="trait"></div>
+    
     <p id="description"><?php the_field('section5_description'); ?></p>
-    <div id="orateurs">
+    <div id="orateurs"><div id="orateurs1">
         
-    <div id="portrait1"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg">
-        <p class="nom">Wim de Vries</p>
-        <p>Lorem ipsum calidae</p>
-        <a href="">LIRE LA VIDEO</a></div>
+    <div id="portrait1"><img alt="" src="<?php the_field('photo_orateur1'); ?>">
+        <p class="nom"><?php the_field('nom_orateur1'); ?></p>
+        <p id="description"><?php the_field('txt_orateur1'); ?></p>
+        <?php $lien_orateur1 = get_field('lien_orateur1'); ?>
         
-        <div id="portrait2"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg">
-            <p class="nom">Laurence Depezay</p>
-        <p>Lorem ipsum calidae</p>
-        <a href="">LIRE LA VIDEO</a></div>
         
-        <div id="portrait3"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg">
-            <p class="nom">Armando Perez Cueto</p>
-        <p>Lorem ipsum calidae</p>
+        <a href="<?php echo $lien_orateur1['url'] ?>">LIRE LA VIDEO</a></div>
+        
+        <div id="portrait2"><img alt="" src="<?php the_field('photo_orateur2'); ?>">
+            <p class="nom"><?php the_field('nom_orateur2'); ?></p>
+        <p id="description"><?php the_field('txt_orateur2'); ?></p>
+        <?php $lien_orateur2 = get_field('lien_orateur2'); ?>
+        <a href="<?php echo $lien_orateur2['url'] ?>">LIRE LA VIDEO</a>    </div>
+        
+        <div id="portrait3"><img alt="" src="<?php the_field('photo_orateur3'); ?>">
+            <p class="nom"><?php the_field('nom_orateur3'); ?></p>
+        <p id="description"><?php the_field('txt_orateur2'); ?></p>
         <a href="">LIRE LA VIDEO</a></div>
         
         <div id="portrait4"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg">
-        <p>Lorem ipsum calidae</p>
+            <p class="nom">Christophe</p>
+        <p id="description">Lorem ipsum calidae</p>
+            
+            <a href="">LIRE LA VIDEO</a></div></div>
+
+        
+    <div id="orateurs2">
+        <div id="portrait5"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg">
+            <p class="nom">Christophe</p>
+        <p id="description">Lorem ipsum calidae</p>
         <a href="">LIRE LA VIDEO</a></div>
-    </div>
+        
+        <div id="portrait6"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/portrait.jpg">
+            <p class="nom">Christophe</p>
+        <p id="description">Lorem ipsum calidae</p>
+        <a href="">LIRE LA VIDEO</a></div>
+        </div></div></div>
 </section>
 
 <section class="section6">
     <h1 id="titre">INFORMATIONS PRATIQUES</h1>
+    <div class="trait"></div>
     <div id="background_image" ></div>
 </section>
 
@@ -105,15 +128,39 @@ if ( have_posts() ) {
 
 <section class="section7">
     <h1 id="titre">VIDEOS</h1>
+    <div class="trait"></div>
     <div id="grandes_videos">
-    <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video1">
-    <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video2">
+        <a href=""><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video1"></a>
+        
+    <a href=""><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video2"></a>
+    </div>
+    <div id="petites_videos1">
+       <div id="v1"><a href=""><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video1"></a>
+           <div><p class="titre">Construction <br/> de la valeur <br/>des légumineuses</p>
+           <p id="description">Marie-Benoît Magrini</p>
+               </div>
+        </div>
+        
+        <div id="v2"><a href=""><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video2"></a>
+            <div><p class="titre">L'agriculture urbaine, vitrine <br/> de la modernité</p>
+           <p id="description">Florent Quellier</p></div>
+        </div></div>
+    
+        <div id="petites_videos2">
+        <div id="v3"><a href=""><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video3"></a>
+            <div><p class="titre">Vers une éducation agri-<br/> alimentaire</p>
+           <p id="description">Julie Le Gall</p></div></div>
+        
+        <div id="v4"><a href=""><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.jpg" id="video4"></a><div><p class="titre">Réinventer le lien entre <br/> citadins et agriculteurs</p>
+           <p id="description">Nicolas Bricas</p></div>
+        </div>
     </div>
     
 </section>
 
 <section class="section8">
     <h1 id="titre">ACTUS</h1>
+    <div class="trait"></div>
     <div id="articles">
     <div class="ph1"><div id="article1"></div><h5>Ville et agriculture : <br/> rapprochement ou distanciation ?</h5>
     <p>Cette année, les 11e <br/>Rencontres de la Fondation <br/>Louis Bonduelle se dérouleront <br/>le 12 juin ...</p>
@@ -134,6 +181,7 @@ if ( have_posts() ) {
     </div>
 </section>
 <section class="section9">
+
 </section>
     
 <?php
